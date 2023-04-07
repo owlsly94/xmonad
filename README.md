@@ -1,2 +1,2 @@
-# xmonad
+# XMonad
 XMonad with XMobar
