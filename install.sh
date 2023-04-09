@@ -23,3 +23,10 @@ sh ~/xmonad/install_scripts/p10k.sh
 #
 cp -r ~/xmonad/home/* ~/
 #
+# Copy XMonad and XMobar
+#
+cp -r ~/xmonad/.xmonad ~/
+#
+# Recompile and restart XMonad
+#
+xmonad --recompile && xmonad --restart
