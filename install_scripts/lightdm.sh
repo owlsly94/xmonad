@@ -4,7 +4,7 @@ sudo pacman -S lightdm lightdm-gtk-greeter
 #
 # Copy background
 #
-sudo cp ~/.config/wallpapers/witch.jpg /usr/share/pixmaps/
+sudo cp ~/.config/wallpapers/ganime09.jpg /usr/share/pixmaps/
 #
 # Copy config
 #
