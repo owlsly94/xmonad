@@ -15,6 +15,7 @@ programs = [
         'xmonad',
         'xmonad-contrib',
         'xmobar',
+        'dunst',
         'bat',
         'ttf-iosevka-nerd',
         'nomacs',
