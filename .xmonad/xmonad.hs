@@ -58,6 +58,8 @@ myStartupHook = do
     spawnOnce "~/.fehbg"
     spawnOnce "nm-applet"
     spawnOnce "xfce4-power-manager"
+    spawnOnce "killall dunst"
+    spawnOnce "dunst"
     setWMName "LG3D"
 
 -----------------------------
