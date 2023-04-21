@@ -2,6 +2,7 @@
 #
 python3 ~/xmonad/install_scripts/pacman-install-script.py
 python3 ~/xmonad/install_scripts/yay-install-script.py
+sh ~/xmonad/install_scripts/npm_install.sh
 #
 # Copy config files
 #
