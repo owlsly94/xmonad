@@ -25,6 +25,7 @@ programs = [
 	    'ttf-comic-mono-git',
 	    'picom-git',
 	    'powrline-fonts',
+        'nvim-packer-git',
 	    'termite',
         'pyright-git',
         'languageclient-neovim',
