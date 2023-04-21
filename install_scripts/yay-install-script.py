@@ -44,9 +44,6 @@ programs = [
 	    'catppuccin-cursors-mocha',
 	    'caffeine-ng',
         'python-django-docs',
-        'nvim-packer-git',
-        'qtile-extras-git',
-        'qtile-git',
         ]
 
 for program in programs:
