@@ -2,11 +2,14 @@
 
 updates() {
     cupd=$(checkupdates | wc -l)
-    if [ $cupd > 0 ]; then 
-        echo "  $cupd"
-    else
+    available=$cupd
+    if [ $available == 0 ]; then 
         echo " "
+    else
+        echo "  $available"
     fi
 }
 
 echo "$(updates)"
+
+
