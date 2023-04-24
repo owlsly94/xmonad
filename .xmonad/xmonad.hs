@@ -110,7 +110,7 @@ myStartupHook = do
 -----------------------------
 myNormalBorderColor, myFocusedBorderColor :: String
 myNormalBorderColor   = "#45475a"
-myFocusedBorderColor  = "#a6e3a1"
+myFocusedBorderColor  = "#cba6f7"
 
 -----------------------------
 ---------- MODKEY -----------
