@@ -19,6 +19,7 @@ programs = [
         'bat',
         'ttf-iosevka-nerd',
         'nomacs',
+        'veracrypt',
         'pavucontrol',
         'pamixer',
         'alsa-firmware',
