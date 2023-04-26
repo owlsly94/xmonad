@@ -297,6 +297,7 @@ mySpacing i = spacingRaw True (Border i i i i) True (Border i i i i) True
 
 -- Layouts customization
 tall    = renamed [Replace "\984640"]
+        $ gaps [(U,10), (D,10), (L,10), (R,10)]
         $ smartBorders
         $ mySpacing 8
         $ ResizableTall 1 (3/100) (1/2) []
@@ -370,6 +371,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- XMobar show and hide
   , ((controlMask, xK_b), sendMessage $ ToggleStruts)
+  , ((controlMask, xK_g), sendMessage $ ToggleGaps )
 
   -- Toggle Fullscreen with no borders
   , ((modMask, xK_n),       sendMessage $ Toggle NBFULL)
