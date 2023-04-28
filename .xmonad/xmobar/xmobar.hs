@@ -46,7 +46,7 @@ Config {
         , Run Com ".xmonad/scripts/volume.sh" [] "volume" 10
 
         -- Check the weather
-        , Run Weather "LYNI" ["-t", "<fc=#f5c2e7><station> <tempC>°C</fc>" ] 36000
+        , Run Weather "LYNI" ["-t", "<fc=#f5c2e7><fn=1> </fn> <station> <tempC>°C</fc>" ] 36000
 
         -- Wifi Network
         , Run Com ".xmonad/scripts/wifi.sh" [] "wifi" 36000
