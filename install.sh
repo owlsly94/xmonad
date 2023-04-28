@@ -22,7 +22,11 @@ sh ~/xmonad/install_scripts/p10k.sh
 #
 # Copy home configs
 #
-cp -r ~/xmonad/home/* ~/
+cp -r ~/xmonad/home/.moc ~/
+cp -r ~/xmonad/home/.scripts ~/
+cp ~/xmonad/home/.zshrc ~/
+cp ~/xmonad/home/.bashrc ~/
+cp ~/xmonad/home/.bash_profile ~/
 #
 # Copy XMonad and XMobar
 #
