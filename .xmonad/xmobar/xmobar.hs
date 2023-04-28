@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar            = "%" -- delineator between plugin names and straight text
    , alignSep           = "}{" -- separator between left-right alignment
-   , template           = " <icon=xmonad.xpm/>  %UnsafeStdinReader% }{%LYNI%  %thermal0%  %memory%  %cpu%  <fc=#a6e3a1>%volume%</fc>  <fc=#f9e2af>%pacupdate%</fc>  %date%  "
+   , template           = " <icon=xmonad.xpm/>  %UnsafeStdinReader% }{%LYNI%  %thermal0%  %memory%  %cpu%  <fc=#a6e3a1>%volume%</fc>  <fc=#f9e2af>%pacupdate%</fc>  <fc=#fab387>%wifi%</fc>  %date%  "
 
    -- general behavior
    , lowerOnStart       = True    -- send to bottom of window stack on start
@@ -37,7 +37,7 @@ Config {
 
         -- time and date indicator 
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "<fc=#fab387><fn=1> </fn> %H:%M  </fc><fc=#f38ba8><fn=1> </fn> %a, %d %b %Y</fc>" "date" 10
+        , Run Date           "<fc=#eba0ac><fn=1> </fn> %H:%M  </fc><fc=#f38ba8><fn=1> </fn> %a, %d %b %Y</fc>" "date" 10
 
         -- Check for updates
         , Run Com ".xmonad/scripts/pacupdate.sh" [] "pacupdate" 36000
@@ -47,6 +47,9 @@ Config {
 
         -- Check the weather
         , Run Weather "LYNI" ["-t", "<fc=#f5c2e7><station> <tempC>°C</fc>" ] 36000
+
+        -- Wifi Network
+        , Run Com ".xmonad/scripts/wifi.sh" [] "wifi" 36000
 
         , Run UnsafeStdinReader
 
