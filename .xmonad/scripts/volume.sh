@@ -11,4 +11,4 @@ audio() {
     fi
 }
 
-echo "$(audio)"
+echo "$(audio)%"
