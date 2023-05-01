@@ -103,6 +103,9 @@ myStartupHook = do
     spawnOnce "xfce4-power-manager"
     spawnOnce "killall dunst"
     spawnOnce "dunst"
+    --spawnOnce "lxsession"
+    --spawnOnce "killall trayer"
+    --spawnOnce "trayer --edge top --align right --widthtype request --padding 6 --SetDockType true --SetPartialStrut true --expand true  --transparent true --alpha 0 --tint 0x1e1e2e --height 29 &"
     setWMName "LG3D"
 
 -----------------------------
@@ -344,6 +347,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((mod4Mask, xK_r),                  spawn $ powerMenu )
   , ((mod4Mask, xK_w),                  spawn $ wallChanger )
   , ((modMask,  xK_v),                  spawn $ myEditor )
+  , ((modMask,  xK_u),                  spawn $ myTerminal ++ " -e yay --noconfirm")
 
   -- Sound Keys
   , ((modMask, xK_F12),     spawn $ volumeUp )

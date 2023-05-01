@@ -4,7 +4,8 @@ Config {
      font               = "Iosevka Nerd Font Bold 11"
    , bgColor            = "#1e1e2e"
    , fgColor            = "#cdd6f4"
-   , position           = Static{xpos = 0, ypos = 0, width = 1600, height = 30 }
+   --, position           = Static{xpos = 0, ypos = 0, width = 1525, height = 30 } --with trayer
+   , position           = Static{xpos = 0, ypos = 0, width = 1600, height = 30 } --without trayer
    , border             = FullB
    , borderColor        = "#313244"
 
